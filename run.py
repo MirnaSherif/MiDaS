@@ -213,6 +213,11 @@ if __name__ == "__main__":
                         help='Folder with input images (if no input path is specified, images are tried to be grabbed '
                              'from camera)'
                         )
+    
+    parser.add_argument('--video_input',
+                    default=None,
+                    help='Path to the input video file'
+                    )
 
     parser.add_argument('-o', '--output_path',
                         default=None,
